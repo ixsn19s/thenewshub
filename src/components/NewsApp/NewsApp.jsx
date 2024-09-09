@@ -13,7 +13,7 @@ const NewsApp = () => {
         const response =await fetch(`https://newsapi.org/v2/everything?q=${searchData}&apikey=${API_KEY}&language=en`)
         const jsonData =await response.json();
         console.log(jsonData.articles);
-        setNewsData(jsonData.articles) 
+        setNewsData(jsonData.articles) ;
     }
 
     useEffect(() => {
@@ -25,7 +25,8 @@ const NewsApp = () => {
         setSearchData(e.target.value)
     }
     const userInput = (e) => {
-        setSearchData(e.target.value)
+        console.log(e.target.value);
+        setSearchData(e.target.value);
     }
 
   return (

@@ -1,3 +1,4 @@
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar'
 import Mains from './components/HeroPage/Mains'
@@ -43,8 +44,7 @@ const [exploredClicked, setExploreClicked] = useState(true);
               <Mains exploreToggle={exploreToggle}  />
              </div>
             ) : (
-              <div>
-               
+              <div>  
                 <NewsApp />
               </div>
 
@@ -54,16 +54,7 @@ const [exploredClicked, setExploreClicked] = useState(true);
     )
     }
 
-
-   {/* <div className='flex justify-center items-center h-screen w-full'>
-        <StartPage />
-      </div>
-    <div className='w-full h-screen'>
-    <Navbar />
-    <Mains />
-
-    </div>
-     */}
+ 
     </>
   )
 }

@@ -1,58 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom if using React Router
+// import { Link } from 'react-router-dom'; 
 
 const Category = ({ userInput }) => {
-  const handleCategoryClick = (e, category) => {
-    e.preventDefault();
-    userInput(category); // Call the userInput function with the selected category
-  };
+  // const handleCategoryClick = (e, value) => {
+  //   e.preventDefault();
+  //   userInput(value); // Call the userInput function with the selected category
+  // };
 
   return (
     <ul className="flex gap-8 font-semibold text-xl">
       <li>
-        <Link
-          onClick={() => handleCategoryClick('sports')}
-          className="hover:text-violet-600 hover:scale-105 transition-all duration-300"
-          to="/sports" // Replace href with 'to' if using React Router
-        >
-          Sports
-        </Link>
+        <button onClick={userInput} value="sports"  className="hover:text-violet-600 transition-all duration-300">Sports</button>
       </li>
+
       <li>
-        <Link
-          onClick={() => handleCategoryClick('politics')}
-          className="hover:text-blue-700 hover:scale-105 transition-all duration-300"
-          to="/politics"
-        >
-          Politics
-        </Link>
+      <button onClick={userInput} value="politics"  className="hover:text-violet-600 transition-all duration-300">Politics</button>
       </li>
+
       <li>
-        <Link
-          onClick={() => handleCategoryClick('entertainment')}
-          className="hover:text-blue-700 hover:scale-105 transition-all duration-300"
-          to="/entertainment"
-        >
-          Entertainment
-        </Link>
+      <button onClick={userInput} value="entertainment"  className="hover:text-violet-600 transition-all duration-300">Entertainment</button>
       </li>
+
       <li>
-        <Link
-          onClick={() => handleCategoryClick('tech')}
-          className="hover:text-blue-700 hover:scale-105 transition-all duration-300"
-          to="/tech"
-        >
-          Tech
-        </Link>
+      <button onClick={userInput} value="health"  className="hover:text-violet-600 transition-all duration-300">Health</button>
       </li>
+
       <li>
-        <Link
-          onClick={() => handleCategoryClick('health')}
-          className="hover:text-blue-700 hover:scale-105 transition-all duration-300"
-          to="/health"
-        >
-          Health
-        </Link>
+      <button onClick={userInput} value="education"  className="hover:text-violet-600 transition-all duration-300">Education</button>
       </li>
     </ul>
   );

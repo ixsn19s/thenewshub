@@ -15,7 +15,7 @@ const MainText = ({exploreToggle}) => {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-      <img className='my-6' src="https://images.pexels.com/photos/177557/pexels-photo-177557.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+      <img className='my-6' src="https://images.pexels.com/photos/177557/pexels-photo-177557.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img not found" />
         <h2 className='font-semibold text-4xl '>Stay Informed with Our Latest News Coverage</h2>
         <p className='text-lg text-gray-600 leading-tight mt-3'>Get the most up-to-date news from around the world delivered to you by our team of dedicated journalists.</p>
 

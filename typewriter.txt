@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .typewriter {
     display: inline-block;
     overflow: hidden;
@@ -20,7 +16,3 @@
       
     }
   }
-
-
-  /* For a typewriter effect, you might use width: 0ch; to start with the element’s width at zero characters and then animate it to reveal the text one character at a time.
-  i.e from 0ch to 22characters */
