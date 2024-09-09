@@ -15,7 +15,7 @@ const Logo = () => {
     
     <div>
         < img 
-        className='h-20 w-24 cursor-pointer' 
+        className='h-24 cursor-pointer' 
         src="./images/logos.png"
         alt="Logo"
         onClick={handleLogoClick} 
