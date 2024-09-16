@@ -51,7 +51,8 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-purple-400 transition"
+                    className="text-gray-400 hover:text-purple-400
+                     transition"
                     aria-label="Facebook"
                   >
                     <i className="fab fa-facebook text-2xl"></i>

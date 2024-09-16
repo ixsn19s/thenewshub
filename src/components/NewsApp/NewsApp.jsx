@@ -10,10 +10,15 @@ const NewsApp = () => {
     const API_KEY = "5cc49004347c4be9b7089df23c50c01d";
 
     const getData = async() => {
-        const response =await fetch(`https://newsapi.org/v2/everything?q=${searchData}&apikey=${API_KEY}&language=en`)
-        const jsonData =await response.json();
-        console.log(jsonData.articles);
-        setNewsData(jsonData.articles) ;
+      try {
+          const response =await fetch(`https://newsapi.org/v2/everything?q=${searchData}&apikey=${API_KEY}&language=en`)
+          const jsonData =await response.json();
+          console.log(jsonData.articles);
+          setNewsData(jsonData.articles) ;
+      } catch (error) {
+        console.error(error);
+        
+      }
     }
 
     useEffect(() => {
