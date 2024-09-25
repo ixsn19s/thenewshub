@@ -89,7 +89,7 @@ const Footer = () => {
   
               <div className="mt-4">
                 <h4 className="text-lg font-semibold">Contact Us</h4>
-                <p className="text-gray-400 mt-1">Email: girisanjib191@gmail.com</p>
+                <p className="text-gray-400 mt-1">Email: girisanjib191s@gmail.com</p>
                 <p className="text-gray-400 mt-1 ">Phone: 9898989898</p>
               </div>
             </div>
@@ -97,7 +97,7 @@ const Footer = () => {
   
           {/* Copyright Section */}
           <div className="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400">
-            &copy; {new Date().getFullYear()} News Channel. All rights reserved.
+            &copy; {new Date().getFullYear()} IXSN News. All rights reserved.
           </div>
         </div>
       </footer>
