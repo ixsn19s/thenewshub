@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = ({ newsData }) => {
-
+  console.log(newsData);
   const readMore = (url) => {
     window.open(url);
   }
